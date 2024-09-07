@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>WriteStart</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Helvetica:wght@400;700&display=swap');
+      body {
+        font-family: 'Helvetica', sans-serif;
+        background-color: #f2f2f2;
+        background-image: url('https://img.freepik.com/free-photo/vivid-blurred-colorful-wallpaper-background_58702-3772.jpg?w=1800&t=st=1697946849~exp=1697947449~hmac=60362160d1ef595a2c75437b53509e903eed56a5da9b6b1aa836632597080f58');
+        background-size: cover;
+      }
+      .container {
+        display: flex;
+        background-color: #fff;
+        margin: 15px auto;
+        width: 100vw;
+  
+        /***
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        height: 100vh;
+        width: 100vw;
+        background-color: #f2f2f2;
+        background-image: url('https://i.pinimg.com/564x/19/e9/ee/19e9ee832b9f9623b01f66b2f968a8e6.jpg');
+        background-size: cover;***/
+      }
+      .left-column {
+        width: 40%;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        border-right: 1px solid #bcb9b9;
+        flex: 1;
+        box-shadow: 0 0 10px rgba(166, 166, 166, 0.2);
+        flex-direction: column;
+        padding-left: 20px; /* Adjust this value as needed */
+        padding-right: 20px; /* Adjust this value as needed */
+
+  /* align-items: center;
+  text-align: center; */
+        /* Add padding to the right side of the container */
+      }
+      
+
+.left-column h1,
+.left-column p,
+.left-column form {
+    padding-left: inherit; /* Reset the padding for h1, p, and form elements */
+    padding-right: inherit; /* Reset the padding for h1, p, and form elements */
+}
+      /* .left-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+} */
+
+      .right-column {
+			flex: 1;
+			background-color: #fff;
+			padding: 10px;
+      width: 60%;
+		}
+
+    
+      
+      h1 {
+        color: #444;
+        text-align: center;
+        margin-top: 0;
+      }
+      form {
+        padding: 20px;
+        border-radius: 5px;
+        /* background-color: #f7f7f7; */
+        
+      }
+      label {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: 500;
+        font-family: Helvetica;
+
+      }
+      input[type="text"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        font-size: 16px;
+      }
+      button {
+        padding: 10px 20px;
+        background-color: #4CAF50;
+        border: none;
+        border-radius: 5px;
+        color: #fff;
+        font-size: 16px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #3e8e41;
+      }
+      ::placeholder {
+        color: #b0b0b0;
+    }
+      p {
+        white-space: pre-line;
+      }
+      .spinner-border {
+        display: none;
+        margin-top: 20vh;
+        margin-bottom: auto;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .tab-content {
+        overflow: hidden;
+        width: 600px;
+        height: 350px;
+        /*background-color: red;*/
+        backdrop-filter: blur(2px);
+      }
+      .pay-now {
+        display: none; 
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: auto;
+        margin-right: auto;
+        
+      }
+      .pay-now-button {
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+    }
+
+      .submit-letsgo{
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        margin-top: 2vh;
+      }
+      .footer {
+            background-color: #f8f8f8;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            padding: 10px 0;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container" padding="20px" margin="5px">
+      <div class="left-column">
+        <h1>Write Start</h1>
+        <hr class="divider">
+
+        <p>POV: You've just started and there's a lot on your plate.</p>
+        <p>WriteStart sets you up with tweets, posts and blogs for the next 30 days so that you can focus on doing what you do best</p>
+        <hr class="divider">
+
+        <form method="POST">
+          <label for="question1">Company Name</label>
+          <input type="text" id="question1" name="question1" placeholder="Dollar, dollar, dollar">
+      
+          <label for="question2">Product Name</label>
+          <input type="text" id="question2" name="question2" placeholder="A brainchild is born">
+      
+          <label for="question3">Ideal User</label>
+          <input type="text" id="question3" name="question3" placeholder="Time to get them hooked">
+      
+          <label for="question3">Email</label>
+          <input type="text" id="question3" name="question3" placeholder="naam&weirdnumber@pichai.com">
+
+          <button type="submit" class="submit-letsgo">Let's Go</button>
+        </form>
+      
+      </div>
+      <div class="right-column">
+        <!-- <h1>PRD</h1> -->
+        <div class="d-flex justify-content-center">
+          <ul class="nav nav-tabs" id="myTabs">
+              <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#tab1">Tweets</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#tab2">Posts</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#tab3">Blogs</a>
+              </li>
+          </ul>
+      </div>
+      
+
+        <div class="tab-content">
+          
+          <div class="tab-pane fade show active" id="tab1">
+            <!-- <h3>Tab 1 Content</h3> -->
+            <p id="output1">Content will come here:
+            </p>
+            <!-- Add your content for Tab 1 here -->
+          </div>
+          <div class="tab-pane fade" id="tab2">
+            <!-- <h3>Tab 2 Content</h3> -->
+            <p id="output2"></p>
+            <!-- Add your content for Tab 2 here -->
+          </div>
+          <div class="tab-pane fade" id="tab3">
+            <!-- <h3>Tab 3 Content</h3> -->
+            <p id="output3"></p>
+            <!-- Add your content for Tab 3 here -->
+          </div>
+          <div class="spinner-border" role="status">
+            <span class="visually-hidden"></span>
+          </div>
+        </div>
+        <div class="pay-now">
+          <hr class="divider">
+
+          <div class = "pay-now-button">
+            <form>
+                <script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_MV6keVapOImdCY" async> </script>
+            </form>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+    <div class="footer">
+      Dhanishta Maheshwari &copy; 2021
+    </div>
+    <script>
+      const form = document.querySelector('form');
+      const output1 = document.getElementById('output1');
+      const output2 = document.getElementById('output2');
+      const output3 = document.getElementById('output3');
+      const razpay = document.querySelector('.pay-now');
+      const loader = document.querySelector('.spinner-border');
+      const tabcontent = document.querySelector('.tab-content');
+      form.addEventListener('submit', async (event) => {
+          event.preventDefault();
+          loader.style.display = 'block';
+          const formData = new FormData(form);
+          const response = await fetch('/', {
+              method: 'POST',
+              body: formData
+          });
+          const data = await response.json();
+          loader.style.display = 'none';
+          razpay.style.display = 'block';
+          output1.textContent = data.tweets;
+          output2.textContent = data.posts;
+          output3.textContent = data.blogs;
+
+      });
+      $('#myTabs a').on('click', function (e) {
+        e.preventDefault()
+        $(this).tab('show')
+        console.log(this);
+      })
+    </script>
+  
+  </body>
+</html>
